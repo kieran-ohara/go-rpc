@@ -2,8 +2,9 @@ package main
 
 import "fmt"
 
-import "rsc.io/quote"
+import "github.com/kieran-ohara/gogreet"
 
 func main() {
-    fmt.Println(quote.Go())
+  message := gogreet.Hello("Kieran")
+  fmt.Println(message)
 }
