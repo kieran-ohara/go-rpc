@@ -5,6 +5,9 @@ import "fmt"
 import "github.com/kieran-ohara/gogreet"
 
 func main() {
-  message := gogreet.Hello("Kieran")
-  fmt.Println(message)
+	message, err := gogreet.Hello("")
+	if err != nil {
+		fmt.Println("there was an error")
+	}
+	fmt.Println(message)
 }
