@@ -18,5 +18,5 @@ func main() {
   }
 	fmt.Println(greetDevice.Name)
 
-  server.Serve()
+  server.RpcServe()
 }
