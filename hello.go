@@ -13,10 +13,10 @@ func main() {
 	}
 	fmt.Println(message)
 
-  greetDevice := greetrpcdist.Greet {
-    Name: "this is Greet name",
-  }
+	greetDevice := greetrpcdist.Greet{
+		Name: "this is Greet name",
+	}
 	fmt.Println(greetDevice.Name)
 
-  server.RpcServe()
+	server.RpcServe()
 }
